@@ -1,4 +1,5 @@
 <template>
+  <div class = "container pt-3">
       <div class="box">
         <!-- Province loading indicator -->
         <div v-if="loadingProvinces">
@@ -104,6 +105,7 @@
           src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDBZIXSclXCvGim_n17QvvjVhyxlutoqKA&q=Space+Needle,Seattle+WA"
         ></iframe>
       </div>
+    </div>
 </template>
 
 <script setup>
