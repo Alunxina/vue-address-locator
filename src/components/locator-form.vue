@@ -1,7 +1,7 @@
 <template>
       <div class="box">
         <!-- Province loading indicator -->
-        <div v-if="loadingProvinces" class="loading-indicator">
+        <div v-if="loadingProvinces">
           Loading provinces...
         </div>
         <div class="column has-text-left is-size-5">
@@ -21,7 +21,7 @@
       </div>
       <div class="box">
         <!-- Municipality loading indicator -->
-        <div v-if="loadingMunicipalities" class="loading-indicator">
+        <div v-if="loadingMunicipalities">
           Loading municipalities...
         </div>
         <div class="column has-text-left is-size-5">
@@ -41,7 +41,7 @@
       </div>
       <div class="box">
         <!-- Barangay loading indicator -->
-        <div v-if="loadingBarangays" class="loading-indicator">
+        <div v-if="loadingBarangays">
           Loading barangays...
         </div>
         <div class="column has-text-left is-size-5">
@@ -82,7 +82,7 @@
       </div>
       <div class="box is-large">
         <!-- Iframe loading indicator -->
-        <div v-if="loadingBarangays" class="loading-indicator is-loading">
+        <div v-if="loadingBarangays">
           Loading map...
         </div>
         <iframe
