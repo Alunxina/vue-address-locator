@@ -4,7 +4,7 @@ import { createStore } from 'vuex';
 const store = createStore({
   state: {
     provinces: [],
-    municipalities: {}, // Update to store the entire childOptions object
+    // municipalities: {}, // Update to store the entire childOptions object
   },
   mutations: {
     setProvinces(state, provinces) {
