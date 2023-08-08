@@ -1,22 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <topHeader />
+  <locatorForm />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import topHeader from './components/top-header.vue'
+import locatorForm from './components/locator-form.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    topHeader,
+    locatorForm,
   }
 }
 </script>
 
 <style lang="scss">
+@import 'bulma/css/bulma.css';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto:ital,wght@0,300;1,400&display=swap');
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Roboto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
